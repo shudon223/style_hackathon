@@ -1,5 +1,6 @@
-body{
-   background-color:pink;
+body {
+      background: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/06/runway-520x245.jpg") no-repeat center center fixed;
+      background-size: cover;
 }
 .clothes{
     height:100px;
@@ -38,6 +39,7 @@ body{
 
 .human{
     position: relative;
+    margin:auto;
 }
 .human .pants{
     position: absolute;

@@ -2,7 +2,7 @@ $(document).ready(function() {
 var character=[];
 var glasses=["Img/Glasses1.png","Img/Glasses2.png", "Img/glasses3.png"];
 var shoes = ["Img/shoes1.png","Img/shoes2.png", "Img/shoes3.png"];
-var shirts=["Img/shirt1.png","Img/shirt2.png"];
+var shirts=["Img/shirt1.png","Img/shirt2.png","Img/shirt3.png"];
 var pants=["Img/pants1.png", "Img/pants2.png", "Img/pants3.png"];
 var hats = ["Img/hat1.png","Img/hat2.png","Img/hat3.png"];
 // var robotpants=["Img/robotpants1.png","Img/Robotpants2.png"];
@@ -30,115 +30,62 @@ var currentGlasses =0;
 var currentCharacter=0;
 function nextShoes(){
  currentShoes++;
- if(currentShoes> shoes.length){
-  currentShoes=0;
- }
- if(currentShoes<0){
-  currentShoes=shoes.length;
- }
+ currentShoes = checkArray(shoes, currentShoes);
   update();
 }
 function nextShirt(){
  currentShirt++;
-
-  if(currentShirt> shirts.length){
-  currentShirt=0;
- }
- if(currentShirt<0){
-  currentShirt=shirts.length;
- }
+ 
+ currentShirt = checkArray(shirts, currentShirt);
   update();
 }
 function nextPants(){
  currentPants++;
- if(currentPants> pants.length){
-  currentPants=0;
- }
- if(currentPants<0){
-  currentPants=pants.length;
- }
+ currentPants = checkArray(pants, currentPants);
  update();
 }
 function nextGlasses(){
  currentGlasses++;
-
+/*
   if(currentGlasses> glasses.length){
   currentGlasses=0;
  }
  if(currentGlasses<0){
   currentGlasses=glasses.length;
- }
+ }*/
+ currentGlasses = checkArray(glasses, currentGlasses);
   update();
 }
 
 function nextHats(){
  currentHats++;
- 
-  if(currentHats> hats.length){
-  currentHats=0;
-  
- }
- if(currentHats<0){
-  currentHats=hats.length;
-  update();
- }
+ currentHats = checkArray(hats, currentHats);
+ update();
 }
 
 function prevShoes(){
  currentShoes--;
-
-  if(currentShoes> shoes.length){
-  currentShoes=0;
-  
- }
- if(currentShoes<0){
-  currentShoes=shoes.length;
- }
+ currentShoes = checkArray(shoes, currentShoes);
   update();
 }
 function prevShirt(){
  currentShirt--;
-
-  if(currentShirt> shirts.length){
-  currentShirt=0;
- }
- if(currentShirt<0){
-  currentShirt=shirts.length;
-  
- }
+ currentShirt = checkArray(shirts, currentShirt);
   update();
 }
 function prevPants(){
  currentPants--;
-
-  if(currentPants> pants.length){
-  currentPants=0;
- }
- if(currentPants<0){
-  currentPants=pants.length;
- }
+ currentPants = checkArray(pants, currentPants);
   update();
 }
 function prevGlasses(){
  currentGlasses--;
- 
-  if(currentGlasses> glasses.length){
-  currentGlasses=0;
- }
- if(currentGlasses<0){
-  currentGlasses=glasses.length;
- }
+ currentGlasses = checkArray(glasses, currentGlasses);
  update();
 }
 function prevHats(){
  currentHats--;
- 
-  if(currentHats> hats.length){
-  currentHats=0;
- }
- if(currentHats<0){
-  currentHats=hats.length;
- }
+ currentHats = checkArray(hats, currentHats);
  update();
 }
 /*
@@ -153,14 +100,13 @@ $("#pantsLeft").click(prevPants);
 
 $("#shoesRight").click(nextShoes);
 $("#shoesLeft").click(prevShoes);
-/*
+
 $("#hatsRight").click(nextHats);
 $("#hatsleft").click(prevHats);
 
 $("#glassesRight").click(nextGlasses);
 $("#glassesLeft").click(prevGlasses);
 
-*/
 
 function checkArray(array,index){
 if(index === array.length){
@@ -168,6 +114,7 @@ if(index === array.length){
 } else if (index ===-1){
 			index = array.length -1;
 }
+return index;
 }
 	
 
