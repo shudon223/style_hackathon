@@ -20,6 +20,12 @@ body {
   left:90px;
   border-radius:50%;
 }
+#snap{
+    position:relative;
+    top:200px;
+    left:600px;
+    
+}
 .img{
     height: 300px;
     width: 300px;
@@ -45,7 +51,7 @@ body {
     position: relative;
     margin:auto;
     top:260px;
-    left:-460px;
+    left:-480px;
 }
 .human .pants{
     position: absolute;

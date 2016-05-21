@@ -1,10 +1,10 @@
 $(document).ready(function() {
 var character=[];
 var glasses=["Img/Glasses1.png","Img/Glasses2.png", "Img/glasses3.png"];
-var shoes = ["Img/shoes1.png","Img/shoes2.png", "Img/shoes3.png"];
+var shoes = ["Img/shoes1.png","Img/shoes2.png","Img/shoes3.png","Img/shoes4.png"];
 var shirts=["Img/shirt1.png","Img/shirt2.png","Img/shirt3.png"];
 var pants=["Img/pants1.png", "Img/pants2.png", "Img/pants3.png"];
-var hats = ["Img/hat1.png","Img/hat2.png","Img/hat3.png"];
+var hats = ["Img/hat1.png","Img/hat2.png","Img/hat3.png","Img/hat4.png"];
 // var robotpants=["Img/robotpants1.png","Img/Robotpants2.png"];
 // var robotshirts=["Img/robotshirt1.png","Img/robotshirt2.png"];
 // var robotshoes=["Img/robotshoes1.png","Img/robotshoes2.png"];
