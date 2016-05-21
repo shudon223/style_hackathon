@@ -1,5 +1,5 @@
 body {
-      background: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/06/runway-520x245.jpg") no-repeat center center fixed;
+      background: url("https://upload.wikimedia.org/wikipedia/commons/4/49/MICHALSKY_StyleNite_SS13_Stage.jpg") no-repeat center center fixed;
       background-size: cover;
 }
 .clothes{
@@ -8,13 +8,17 @@ body {
 }
 #video{
   height:200px;
+  position:relative;
+  top:150px;
+  left:700px;
 }
 #canvas{
   height:100px;
-  width:210px;
+  width:133px;
   position: absolute;
   top:25px;
   left:90px;
+  border-radius:50%;
 }
 .img{
     height: 300px;
@@ -40,6 +44,8 @@ body {
 .human{
     position: relative;
     margin:auto;
+    top:260px;
+    left:-460px;
 }
 .human .pants{
     position: absolute;
@@ -93,7 +99,7 @@ body {
 
 }
 .leftArrow{
-    width: 0;
+  width: 0;
 	height: 0;
 	border-top: 15px solid transparent;
 	border-right: 30px solid red;
@@ -104,7 +110,9 @@ body {
 	
 	
 }
-
+.Holder{
+    margin-right:auto;
+}
 .Menu{
     max-width:300px;
     display:inline-block;

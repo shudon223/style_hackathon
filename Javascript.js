@@ -173,7 +173,7 @@ for (i = 0; i < acc.length; i++) {
 	
     }// Trigger photo take
   document.getElementById("snap").addEventListener("click", function() {
-	context.drawImage(video, 0, 0, 200, 200);
+	context.drawImage(video, 0, 0, canvas.width, canvas.height);
   });
 //}, false);
 
