@@ -5,9 +5,20 @@ body{
     height:100px;
     width: 100px;
 }
+#video{
+  height:200px;
+}
+#canvas{
+  height:100px;
+  width:210px;
+  position: absolute;
+  top:25px;
+  left:90px;
+}
 .img{
     height: 300px;
     width: 300px;
+    top: 100px;
 }
 .pikachu{
     position: relative;
@@ -41,8 +52,8 @@ body{
 }
 .human .shoes{
     position: absolute;
-    top: -6px;
-    left: 0px;
+    top: 1px;
+    left: -1px;
 }
 .human .hats{
     position: absolute;
@@ -56,18 +67,18 @@ body{
 }
 .robot .shirts{
     position: absolute;
-    top: 4px;
+    top: 600px;
     left: 4px;
 }
 .robot .pants{
     position: absolute;
-    top:4px ;
-    left: 4px;
+    top:637px ;
+    left:396px;
 }
 .robot .shoes{
     position: absolute;
-    top:4px ;
-    left: -4px;
+    top:633px ;
+    left: 394px;
 } 
 .rightArrow{
     width: 0;
