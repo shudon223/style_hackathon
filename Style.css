@@ -1,7 +1,21 @@
 body{
    background-color:pink;
 }
-img{
+.clothes{
     height:100px;
     width: 100px;
+}
+.rightArrow{
+    width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 30px solid red;
+	border-bottom: 15px solid transparent;
+}
+.leftArrow{
+    width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-right: 30px solid red;
+	border-bottom: 15px solid transparent;
 }
