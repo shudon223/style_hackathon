@@ -5,12 +5,58 @@ body{
     height:100px;
     width: 100px;
 }
+.character{
+    height: 300px;
+    width: 300px;
+}
+
+.stickfigure{
+    position: relative;
+}
+.pants{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:156px;
+    left: 85px;
+}
+.glasses{
+    height: 52px;
+    width: 96px;
+    position: absolute;
+    top: 12px;
+    left: 86px;
+}
+.shoes{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 194px;
+    left: 84px;
+}
+.hats{
+    height: 89px;
+    width: 90px;
+    position: absolute;
+    top: -51px;
+    left: 92px;
+}
+.shirt{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 68px;
+    left: 85px;
+}
 .rightArrow{
     width: 0;
 	height: 0;
 	border-top: 15px solid transparent;
 	border-left: 30px solid red;
 	border-bottom: 15px solid transparent;
+	display:inline-block;
+	margin-left:10px;
+
 }
 .leftArrow{
     width: 0;
@@ -18,4 +64,25 @@ body{
 	border-top: 15px solid transparent;
 	border-right: 30px solid red;
 	border-bottom: 15px solid transparent;
+	display:inline-block;
+	margin-right:10px;
+	
+	
 }
+h1{
+    display:inline;
+}
+.Menu{
+    border:2px solid;
+}
+#characterHolder{
+    display:block;
+
+}
+#pantsHolder{
+    display:block;
+}
+#shoesHolder{
+    display:block;
+}
+
